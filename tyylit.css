@@ -1,0 +1,84 @@
+:root{
+  --paavari: #00008b;
+  --tekstivari: #4b0082	;
+  --apuvari:	#87cefa;
+  --fonttikoko: 400;
+  --otsikkofontti:900;
+  --korostettufontti:600;
+  --transition:.3s ease;
+  --line-height:1.5rem;
+}
+html{
+  scroll-behavior: smooth;
+  height: 100%;
+}
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+  transition:var(--transition);
+}
+body{
+  font-family: "Times New Roman", Times, serif;
+}
+ul li {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+  color: var(--paavari);
+}
+a:hover{
+  color: var(--tekstivari)
+}
+.nimi{
+  color: var(--tekstivari);
+}
+nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding:1rem 1.5rem;
+  box-shadow: 1px 2px 1px #800000;
+  position:sticky;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  background-image: url('kuvat/ylakuva.jpg');
+}
+.logo{
+  font-size:1rem;
+  font-weight:400;
+}
+ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-item {
+  margin-left: 2rem;
+}
+
+.nav-link {
+  font-weight: var(--korostettufontti);
+}
+.about{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.9rem;
+  background-color: #00ffff;
+  height: 100%;
+}
+.esittely{
+  max-width: 50%;
+}
+.esittely h1{
+  font-size:2rem;
+  margin-bottom:1rem;
+}
+.esittely p{
+  font-size:1.2rem;
+  line-height: var(--line-height);
+}
