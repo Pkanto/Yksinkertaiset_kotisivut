@@ -82,3 +82,18 @@ ul {
   font-size:1.2rem;
   line-height: var(--line-height);
 }
+.alkusana {
+  height: 70rem;
+  width: 100%;
+  background-color:aliceblue;
+  align-items: center;
+}
+.ball{
+  width: 100px;
+  height: 100px;
+  border-radius:50%;
+  background-color: #800000;
+}
+.otsikko{
+  align-items: center;
+}
