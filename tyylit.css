@@ -1,6 +1,7 @@
 :root{
-  --paavari: #00008b;
+  --paavari: #5b5bf1;
   --tekstivari: #4b0082	;
+  --tekstivari1:#020f20	;
   --apuvari:	#87cefa;
   --fonttikoko: 400;
   --otsikkofontti:900;
@@ -19,25 +20,28 @@ html{
   transition:var(--transition);
 }
 body{
-  font-family: "Times New Roman", Times, serif;
+  font-family: Helvetica, Times, sans-serif;
+  background:linear-gradient(var(--paavari) 25%,var(--apuvari) 50%,var(--apuvari) 75%, var(--paavari) 100%);
 }
 ul li {
   list-style-type: none;
 }
 a {
   text-decoration: none;
-  color: var(--paavari);
+  color: var(--tekstivari1);
 }
 a:hover{
   color: var(--tekstivari)
 }
 .nimi{
   color: var(--tekstivari);
+  display:flex;
+  align-items:right;
+  padding-right:5px;
 }
 nav{
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  justify-content:space-between;
   padding:1rem 1.5rem;
   box-shadow: 1px 2px 1px #800000;
   position:sticky;
@@ -46,13 +50,20 @@ nav{
   z-index: 1;
   background-image: url('kuvat/ylakuva.jpg');
 }
+.nimi-logo{
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+}
 .logo{
   font-size:1rem;
   font-weight:400;
 }
-ul {
+.linkit {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
 }
 
@@ -62,14 +73,6 @@ ul {
 
 .nav-link {
   font-weight: var(--korostettufontti);
-}
-.about{
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 1.9rem;
-  background-color: #00ffff;
-  height: 100%;
 }
 .esittely{
   max-width: 50%;
@@ -82,18 +85,97 @@ ul {
   font-size:1.2rem;
   line-height: var(--line-height);
 }
-.alkusana {
-  height: 70rem;
-  width: 100%;
-  background-color:aliceblue;
-  align-items: center;
+.alkusana{
+  max-width: 50%;
 }
-.ball{
-  width: 100px;
-  height: 100px;
+.alkusana h1{
+  font-size:2rem;
+  margin-bottom:1rem;
+}
+.alkusana p{
+  font-size:1.2rem;
+  line-height: var(--line-height);
+}
+.about{
+  display: flex;
+  justify-content:space-evenly;
+  align-items:center;
+  padding:20px;
+  width:100%;
+  height:800px;
+}
+.alku{
+  display: flex;
+  justify-content:space-evenly;
+  align-items:center;
+  padding:20px;
+  width:100%;
+  height:800px;
+}
+.projektit{
+  display: flex;
+  justify-content:space-evenly;
+  align-items:center;
+  padding:20px;
+  width:100%;
+  height:800px;
+}
+.contact{
+  display: flex;
+  justify-content:space-evenly;
+  align-items:center;
+  padding:20px;
+  width:100%;
+  height:800px;
+}
+.skills{
+  display: flex;
+  justify-content:space-evenly;
+  align-items:center;
+  padding:20px;
+  width:100%;
+  height:800px;
+}
+img{
+  height:180px;
+  width:165px;
+}
+.taidot-laatikko{
+  display: flex;
+  justify-content:space-evenly;
+}
+.taidot-laatikko1{
+  display: flex;
+  justify-content:space-around;
+  padding-left:10px;
+  padding-right:10px;
+  border: 1px solid #020f20;
+  background-color: lightpink;
   border-radius:50%;
-  background-color: #800000;
+  height: 100px;
+  width: 100px;
 }
-.otsikko{
-  align-items: center;
+.taidot-laatikko1 p{
+  display: flex;
+  justify-content:center;
+  align-items:center;
+  margin:15px;
+}
+.front{
+  display: flex;
+  justify-content:space-around;
+  flex-direction:column;
+  padding: 10px;
+}
+.back{
+  display: flex;
+  justify-content:space-around;
+  flex-direction:column;
+  padding: 10px;
+}
+.versio{
+  display: flex;
+  justify-content:space-around;
+  flex-direction:column;
+  padding: 10px;
 }

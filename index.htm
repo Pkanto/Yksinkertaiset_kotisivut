@@ -9,12 +9,13 @@
 </head>
 <body>
   <nav>
-    <a href = "#" class= "logo">
-      <h1>
-        <span class="nimi">Pasi Kanto</span>
-        <span class="kone">&#128187;</span>
-      </h1>
-      <ul>
+       <div> 
+        <h1 class="nimi-logo">
+          <a href="#alku"><h1><span class="nimi">Pasi Kanto</span></h1></a>
+          <span class="kone">&#128187;</span>
+        </h1>
+      </div>
+      <ul class="linkit">
         <li class="nav-item">
           <a href="#about" class="nav-link" id="nav-link">About Me</a>
         </li>
@@ -22,18 +23,26 @@
           <a href="#skills" class="nav-link" id="nav-link">Skills</a>
         </li>
         <li class="nav-item">
-          <a href="#projectit" class="nav-link" id="nav-link">Projektit</a>
+          <a href="#projektit" class="nav-link" id="nav-link">Projektit</a>
         </li>
         <li class="nav-item">
           <a href="#contact" class="nav-link" id="nav-link">Take contact</a>
         </li>
       </ul>
-    </a>
   </nav>
-  <section class="alku">
+  <section class="alku" id="alku">
     <div class="alkusana">
       <h1 class = "otsikko">Pasi Kanto</h1>
-      <div class="ball"></div>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+         sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+         Posuere ac ut consequat semper. Semper risus in hendrerit gravida 
+         rutrum quisque non tellus orci. Cras sed felis eget velit aliquet 
+         sagittis id consectetur. Morbi leo urna molestie at elementum eu 
+         facilisis. Phasellus vestibulum lorem sed risus ultricies tristique nulla.
+          Congue quisque egestas diam in arcu cursus euismod quis viverra.</p>
+    </div>
+    <div class="kuva1">
+      <img class="omakuva" src="https://www.fillmurray.com/640/360" />
     </div>
   </section>
   <section class="about" id="about">
@@ -44,11 +53,53 @@
       <p>
 
 Why do we use it?
-It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy.¸ Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+It is a long established fact that a reader will be distracted by the readable content of 
+a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less 
+normal distribution of letters, as opposed to using 'Content here, content here', making it look 
+like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as 
+their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy.¸
+ Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour 
+ and the like).
       </p>
     </div>
     <div class="kuvani">
       <img src="/kuvat/lataus.jpeg"/>
+    </div>
+  </section>
+  <section class="skills" id="skills">
+    <div class="taidot-laatikko">
+        <div class="front"><h3>Frontti</h3>
+        <div class="taidot-laatikko1"><p>HTML</p></div>
+        <div class="taidot-laatikko1"><p>CSS</p></div>
+        <div class="taidot-laatikko1"><p>Javascript</p></div>
+        <div class="taidot-laatikko1"><p>React</p></div>
+      </div>
+      <div class="back"><h3>Back-end</h3>
+        <div class="taidot-laatikko1"><p>Python</p></div>
+        <div class="taidot-laatikko1"><p>Django</p></div>
+        <div class="taidot-laatikko1"><p>NodeJS</p></div>
+      </div>
+      <div class="versio"><h3>VersioHallinta</h3>
+        <div class="taidot-laatikko1"><p>Git</p></div>
+        <div class="taidot-laatikko1"><p>GitHub</p></div>
+      </div>
+    </div>
+  </section>
+  <section class="projekstit" id="projektit">
+    <div class="proj-laa">
+      <div class="proj-laa1">Blogi sivustot</div>
+      <div class="proj-laa1">Portfolio sivusto</div>
+      <div class="proj-laa1">Matopeli</div>
+    </div>
+  </section>
+  <section class="contact" id="contact">
+    <div class="kontakti">
+      <form>
+        <input type="text" name="nimi" class="yht-nimi" placeholder="Nimi"/>
+        <input type="email" class="yht-sahk" id="yht-sahk" placeholder="email"/>
+        <textarea class="teksti" id="teksti" placeholder="Viesti" rows="10" cols="50"></textarea>
+        <input type="submit" action="#" />
+      </form>
     </div>
   </section>
 </body>
